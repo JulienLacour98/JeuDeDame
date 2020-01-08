@@ -31,5 +31,11 @@ public abstract class Piece {
         this.pos = pos;
     }
     
+    /**
+     *
+     * @param newPos : Position où l'on souhaite déplacer la pièce
+     * @param estNoire : Booléen qui vaut True si la pièce et Noire et False sinon
+     * @return
+     */
     public abstract boolean deplacementValide(Position newPos, boolean estNoire);
 }

@@ -11,10 +11,20 @@ package edu.jeudedame;
  */
 public class Dame extends Piece{
     
+    /**
+     *
+     * @param pos
+     */
     public Dame(Position pos) {
         super(pos);
     }
 
+    /**
+     *
+     * @param newPos
+     * @param estNoire
+     * @return True si la Dame peut se déplacer à la position newPos
+     */
     @Override
     public boolean deplacementValide(Position newPos, boolean estNoire) {
         boolean b = false;

@@ -11,10 +11,20 @@ package edu.jeudedame;
  */
 public class Pion extends Piece {
     
+    /**
+     *
+     * @param pos
+     */
     public Pion(Position pos) {
         super(pos);
     }
 
+    /**
+     *
+     * @param newPos
+     * @param estNoire
+     * @return True si le Pion peut se déplacer à la position newPos
+     */
     @Override
     public boolean deplacementValide(Position newPos, boolean estNoire) {
         if (newPos.positionValide()){

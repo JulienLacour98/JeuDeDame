@@ -47,11 +47,22 @@ public class Position {
         this.y = y;
     }
     
+    /**
+     * 
+     * @param dx
+     * @param dy
+     * 
+     * Fonction qui modifie la postion de dx et dy
+     */
     public void deplace(int dx, int dy){
         this.x += dx;
         this.y += dy;
     }
     
+    /**
+     *
+     * La fonction renvoie true si la postion est bien comprise dans le plateau de jeu 
+     */
     public boolean positionValide(){
         return ((this.x >= 0) && (this.x <= 10) && (this.y >= 0) && (this.y <= 10));
     }
