@@ -9,6 +9,10 @@ package edu.jeudedame;
  *
  * @author Julien
  */
-public class Pion {
+public class Pion extends Piece {
+    
+    public Pion(Position pos) {
+        super(pos);
+    }
     
 }

@@ -9,11 +9,25 @@ package edu.jeudedame;
  *
  * @author Julien
  */
-public abstract class  Piece {
+public abstract class Piece {
     
     private Position pos;
     
     Piece(Position pos){
+        this.pos = pos;
+    }  
+
+    /**
+     * @return the pos
+     */
+    public Position getPos() {
+        return pos;
+    }
+
+    /**
+     * @param pos the pos to set
+     */
+    public void setPos(Position pos) {
         this.pos = pos;
     }
 }

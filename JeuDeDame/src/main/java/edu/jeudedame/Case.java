@@ -9,10 +9,6 @@ package edu.jeudedame;
  *
  * @author Julien
  */
-public class Dame extends Piece{
-    
-    public Dame(Position pos) {
-        super(pos);
-    }
+public class Case {
     
 }
