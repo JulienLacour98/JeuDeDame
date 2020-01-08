@@ -14,5 +14,20 @@ public class Dame extends Piece{
     public Dame(Position pos) {
         super(pos);
     }
+
+    @Override
+    public boolean deplacementValide(Position newPos, boolean estNoire) {
+        boolean b = false;
+        if (newPos.positionValide()) {
+            for (int i = 0; i <= 10; i++ ){
+                if ((newPos.getY() == (this.pos.getY() + i)) || (newPos.getY() == (this.pos.getY() - i)) ) {
+                    if (newPos.getX() == (this.pos.getX() + i) || newPos.getX() == (this.pos.getX() - i)){
+                        b = true;
+                    }
+                }
+            }
+        }
+        return b;
+    }
     
 }

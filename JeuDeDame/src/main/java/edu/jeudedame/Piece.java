@@ -11,7 +11,7 @@ package edu.jeudedame;
  */
 public abstract class Piece {
     
-    private Position pos;
+    Position pos;
     
     Piece(Position pos){
         this.pos = pos;
@@ -30,4 +30,6 @@ public abstract class Piece {
     public void setPos(Position pos) {
         this.pos = pos;
     }
+    
+    public abstract boolean deplacementValide(Position newPos, boolean estNoire);
 }

@@ -51,4 +51,8 @@ public class Position {
         this.x += dx;
         this.y += dy;
     }
+    
+    public boolean positionValide(){
+        return ((this.x >= 0) && (this.x <= 10) && (this.y >= 0) && (this.y <= 10));
+    }
 }
