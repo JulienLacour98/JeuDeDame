@@ -30,10 +30,8 @@ public class Dame extends Piece{
         boolean b = false;
         if (newPos.positionValide()) {
             for (int i = 0; i <= 10; i++ ){
-                if ((newPos.getY() == (this.pos.getY() + i)) || (newPos.getY() == (this.pos.getY() - i)) ) {
-                    if (newPos.getX() == (this.pos.getX() + i) || newPos.getX() == (this.pos.getX() - i)){
-                        b = true;
-                    }
+                if (((newPos.getY() == (this.pos.getY() + i)) || (newPos.getY() == (this.pos.getY() - i))) && ((newPos.getX() == (this.pos.getX() + i) || newPos.getX() == (this.pos.getX() - i)))) {
+                    b = true;
                 }
             }
         }
