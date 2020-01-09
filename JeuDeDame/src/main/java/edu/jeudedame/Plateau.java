@@ -96,6 +96,6 @@ public class Plateau {
     // Elle teste si le pion à la position actuelle existe, verifie si c'est une dame ou un pion 
     //et vérifie si le déplacement à la position suivante est possible en prenant en compte les autres pièces
     public void deplacement(Position posActuelle, Position posSuivante){
-        
+          throw new UnsupportedOperationException();
     }
 }
